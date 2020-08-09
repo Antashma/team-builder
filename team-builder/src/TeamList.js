@@ -7,7 +7,10 @@ function TeamList() {
         <div>
             <h3>Team List Component</h3>
             {
-            myTeam.map((member, index) => <p key={index}>{member.name[0]}</p>)
+            myTeam.map((member, index) => 
+                <p key={index}>
+                    {member.name[0]} {member.name[1]} the {member.title}
+                </p>)
             }
         </div>
     )
