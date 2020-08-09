@@ -1,3 +1,13 @@
+h3 {
+  color: darkturquoise;
+}
+
+label {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: small;
+}
+
 .App {
   text-align: center;
   display: flex;

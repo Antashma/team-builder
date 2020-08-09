@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import {teamMembers} from './team-members';
+import React from 'react'
 
-function TeamList() {
-    const [myTeam, setMyTeam] = useState(teamMembers);
+function TeamList({members}) {
     return (
         <div>
             <h3>Team List Component</h3>
             {
-            myTeam.map((member, index) => 
+            members.map((member, index) => 
                 <p key={index}>
-                    {member.name[0]} {member.name[1]} the {member.title}
+                    {member.name} the {member.title} ({member.role}) <br />
+                    {member.bio}
                 </p>)
             }
+            
         </div>
     )
 }
